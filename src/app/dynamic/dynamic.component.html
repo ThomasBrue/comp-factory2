@@ -1,0 +1,27 @@
+<div style="border: 1px solid blue">
+  <p>Dynamic Component {{ index }}</p>
+  <div>{{ compInput }}</div>
+  <hr />
+
+  <div style="margin: 10px">
+    <label for="item-input">Add String:</label>
+    <input type="text" id="item-input" #newStringItem />
+    <button (click)="putOutString(newStringItem.value)">
+      send string parrent
+    </button>
+  </div>
+
+  <div style="margin: 10px">
+    <label for="item-input">Add Array:</label>
+    <input type="text" id="item-input" #newArrayItem />
+    <button (click)="putOutArray(newArrayItem.value)">
+      send array to parrent
+    </button>
+  </div>
+
+  <div style="margin: 10px">
+    <button (click)="putOutBoolean()">Emmit boolean event</button>
+  </div>
+
+  putOutArray
+</div>
